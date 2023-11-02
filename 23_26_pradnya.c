@@ -8,12 +8,12 @@ struct node{
 };
 
 struct node* createNode(int data){
-    struct node *n; // creating a node pointer
-    n = (struct node *) malloc(sizeof(struct node)); // Allocating memory in the heap
-    n->data = data; // Setting the data
-    n->left = NULL; // Setting the left and right children to NULL
-    n->right = NULL; // Setting the left and right children to NULL
-    return n; // Finally returning the created node
+    struct node *n;
+    n = (struct node *) malloc(sizeof(struct node));
+    n->data = data;
+    n->left = NULL;
+    n->right = NULL;
+    return n; 
 }
 
 void preOrder(struct  node* root){
