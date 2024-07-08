@@ -152,7 +152,7 @@ void display()
     else
     {
         temp=list;
-        while(temp->next != NULL)
+        while(temp != NULL)
         {
             printf("\n%d",temp->info);
             temp=temp->next;
